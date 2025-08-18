@@ -43,14 +43,14 @@ export function Projects() {
       technologies: ["Next.js", "Tailwind CSS", "TypeScript",],
       image: "/myportfolio.png",
       liveUrl: "https://www.bernardekoli.xyz",
-      githubUrl: "https://github.com/bernard-ekoli",
+      githubUrl: "https://github.com/bernard-ekoli/my-portfolio",
     },
     {
       title: "TXNL Internal Tools",
       description:
         "A range of internal tools and applications for TXNL, each tailored to solve real business challenges and enhance user experience.",
       status: "Ongoing",
-      technologies: ["React", "Node.js", "PostgreSQL", "Docker", "AWS"],
+      technologies: ["React", "Next.js", "Node.js", "MongoDB", "AWS"],
       image: "/business-internal-tools-dashboard.png",
       liveUrl: null,
       githubUrl: null,

@@ -1,7 +1,7 @@
 "use client"
 
 import type React from "react"
-
+import emailjs from "@emailjs/browser"
 import { useState } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -19,11 +19,32 @@ export function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission here
-    console.log("Form submitted:", formData)
-    // Reset form
-    setFormData({ name: "", email: "", subject: "", message: "" })
+
+    emailjs
+      .send(
+        "service_hsrceo2",     // from EmailJS dashboard
+        "template_76qadal",    // from EmailJS dashboard
+        {
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        "Jnb2XFEIkfB93HcEP"      // from EmailJS account
+      )
+      .then(
+        (result) => {
+          console.log("Message sent:", result.text)
+          alert("Message sent successfully!")
+          setFormData({ name: "", email: "", subject: "", message: "" })
+        },
+        (error) => {
+          console.error("Error:", error.text)
+          alert("Something went wrong, please try again.")
+        }
+      )
   }
+
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData((prev) => ({
@@ -61,7 +82,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="font-medium text-foreground">Email</h4>
-                  <p className="text-muted-foreground">bernard@example.com</p>
+                  <p className="text-muted-foreground">bernardekolisocial@gmail.com</p>
                 </div>
               </div>
 
@@ -71,7 +92,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="font-medium text-foreground">Phone</h4>
-                  <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                  <p className="text-muted-foreground">+234 (802) 638-6641</p>
                 </div>
               </div>
 
@@ -111,7 +132,7 @@ export function Contact() {
                     <label htmlFor="name" className="text-sm font-medium text-foreground">
                       Name
                     </label>
-                    <Input id="name" name="name" value={formData.name} onChange={handleChange} required />
+                    <Input id="name" name="name" value={formData.name} onChange={handleChange} required placeholder="John/Your Company's Name" />
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="email" className="text-sm font-medium text-foreground">
@@ -124,6 +145,7 @@ export function Contact() {
                       value={formData.email}
                       onChange={handleChange}
                       required
+                      placeholder="yourname/company@example.com"
                     />
                   </div>
                 </div>
@@ -132,7 +154,7 @@ export function Contact() {
                   <label htmlFor="subject" className="text-sm font-medium text-foreground">
                     Subject
                   </label>
-                  <Input id="subject" name="subject" value={formData.subject} onChange={handleChange} required />
+                  <Input id="subject" name="subject" value={formData.subject} onChange={handleChange} required placeholder="Short summary of what am building" />
                 </div>
 
                 <div className="space-y-2">
@@ -146,6 +168,7 @@ export function Contact() {
                     value={formData.message}
                     onChange={handleChange}
                     required
+                    placeholder="Hi Bernard My Company/I need your expertise in the development of my apps and sites"
                   />
                 </div>
 

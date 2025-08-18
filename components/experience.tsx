@@ -47,7 +47,7 @@ export function Experience() {
         "Specialized in React and Next.js ecosystems",
         "Built responsive, high-performance applications",
       ],
-      technologies: ["React", "Next.js", "TypeScript", "Node.js", "Express", "PostgreSQL", "MongoDB"],
+      technologies: ["React", "Next.js", "TypeScript", "Node.js", "Express", "MongoDB"],
     },
   ]
 

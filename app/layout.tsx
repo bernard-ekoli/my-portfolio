@@ -4,10 +4,14 @@ import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Bernard Ekoli Portfolio',
-  description: 'Developed by Bernard',
-  generator: 'Bernard',
+  title: "Bernard Ekoli Portfolio",
+  description: "Developed by Bernard",
+  generator: "Bernard",
+  icons: {
+    icon: "/developer-image.jpeg", // path inside /public
+  },
 }
+
 
 export default function RootLayout({
   children,
