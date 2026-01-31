@@ -10,6 +10,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Mail, MapPin, Phone, Send } from "lucide-react"
 
 export function Contact() {
+  const [loading, setLoading] = useState(false)
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -19,6 +20,7 @@ export function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
+    setLoading(true)
 
     emailjs
       .send(
@@ -37,6 +39,7 @@ export function Contact() {
           console.log("Message sent:", result.text)
           alert("Message sent successfully!")
           setFormData({ name: "", email: "", subject: "", message: "" })
+          setLoading(false)
         },
         (error) => {
           console.error("Error:", error.text)
@@ -92,7 +95,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="font-medium text-foreground">Phone</h4>
-                  <p className="text-muted-foreground">+234 (802) 638-6641</p>
+                  <p className="text-muted-foreground">+234 (916) 251-4151</p>
                 </div>
               </div>
 
@@ -104,18 +107,6 @@ export function Contact() {
                   <h4 className="font-medium text-foreground">Location</h4>
                   <p className="text-muted-foreground">Available for remote work worldwide</p>
                 </div>
-              </div>
-            </div>
-
-            <div className="pt-6">
-              <h4 className="font-medium text-foreground mb-4">Upcoming Launches</h4>
-              <div className="space-y-2 text-muted-foreground">
-                <p>
-                  🚀 <strong className="text-primary">TXNL</strong> - September 2025
-                </p>
-                <p>
-                  💳 <strong className="text-primary">EkolisPay</strong> - October 2025
-                </p>
               </div>
             </div>
           </div>
@@ -172,9 +163,9 @@ export function Contact() {
                   />
                 </div>
 
-                <Button type="submit" className="w-full">
+                <Button disabled={loading} type="submit" className="w-full">
                   <Send className="h-4 w-4 mr-2" />
-                  Send Message
+                  {loading ? "Sending..." : "Send Message"}
                 </Button>
               </form>
             </CardContent>

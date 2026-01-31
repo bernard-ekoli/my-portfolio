@@ -51,13 +51,13 @@ export function Hero() {
           {/* Social Links */}
           <div className="flex justify-center space-x-6">
             <Button variant="ghost" size="sm" asChild>
-              <a href="https://github.com/bernard-ekoli" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.github.com/bernard-ekoli" target="_blank" rel="noopener noreferrer">
                 <Github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
               </a>
             </Button>
             <Button variant="ghost" size="sm" asChild>
-              <a href="www.linkedin.com/in/bernard-ekoli-50516437b" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/bernard-ekoli-b03a1a301" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </a>

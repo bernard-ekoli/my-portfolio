@@ -5,21 +5,6 @@ import { Building, Calendar } from "lucide-react"
 export function Experience() {
   const experiences = [
     {
-      company: "TitanX Neural Labs Ltd (TXNL)",
-      role: "Founder & Lead Software Engineer",
-      period: "Launching September 2025",
-      type: "Upcoming",
-      description:
-        "Preparing to launch an innovative software solutions company focused on neural networks and AI-driven applications. Leading the technical architecture and product development.",
-      achievements: [
-        "Developing core platform architecture",
-        "Building internal tools and applications",
-        "Establishing technical standards and practices",
-        "Preparing for official company launch",
-      ],
-      technologies: ["React", "Next.js", "Node.js", "PostgreSQL", "AI/ML", "Docker", "AWS"],
-    },
-    {
       company: "EkolisPay",
       role: "Founder & Full-Stack Developer",
       period: "Launching October 2025",
@@ -32,7 +17,7 @@ export function Experience() {
         "Architected mobile wallet application",
         "Implemented advanced security features",
       ],
-      technologies: ["React Native", "Next.js", "Node.js", "Stripe API", "MongoDB", "JWT", "Tailwind CSS"],
+      technologies: ["React Native", "Next.js", "Node.js", "MongoDB", "JWT", "Flutterwave API", "Fincra API", "Paystack API", "ConnectBridge VTU API"],
     },
     {
       company: "Freelance & Contract Work",
@@ -42,9 +27,9 @@ export function Experience() {
       description:
         "Delivering custom web applications and digital solutions for various clients. Specializing in modern web technologies and scalable architectures.",
       achievements: [
-        "Delivered 15+ successful projects",
+        "Delivered 5+ successful projects",
         "Maintained 100% client satisfaction rate",
-        "Specialized in React and Next.js ecosystems",
+        "Specialized in React, Next.js, and Express.js",
         "Built responsive, high-performance applications",
       ],
       technologies: ["React", "Next.js", "TypeScript", "Node.js", "Express", "MongoDB"],

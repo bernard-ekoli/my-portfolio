@@ -20,12 +20,6 @@ export function About() {
               scaling performance, and keeping code clean enough to still like it months later.
             </p>
             <p className="text-lg leading-relaxed text-foreground">
-              Currently gearing up to officially launch{" "}
-              <strong className="text-primary">TXNL (TitanX Neural Labs Ltd)</strong> in September 2025 — a venture
-              focused on innovative software solutions — and <strong className="text-primary">EkolisPay</strong> in
-              October 2025, a next-generation digital wallet experience.
-            </p>
-            <p className="text-lg leading-relaxed text-foreground">
               My approach is simple: design with purpose, code with clarity, and ship with confidence. For me, tech
               isn't just a career — it's the toolkit for shaping the future.
             </p>
