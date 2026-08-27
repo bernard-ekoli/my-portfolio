@@ -12,10 +12,19 @@ export function Projects() {
       status: "Completed",
       technologies: ["NextJs/ReactJS", "Node.js", "MongoDB", "Flutterwave API", "JWT", "Paystack API"],
       image: "/theNigeriapropertiesimage.png",
-      liveUrl: "https://www.thenigerianproperties.com/",
+      liveUrl: "https://www.thenigerianproperties.com",
       githubUrl: "https://github.com/bernard-ekoli/theNigerianPropertiesFrontend.git",
     },
-
+    {
+      title: "Ekmark",
+      description:
+        "A full-stack SaaS product built with Next.js, Node.js/Express, TypeScript, and Firebase. Features bulk image watermarking, a public REST API, and a pre-launch waitlist system. Designed for speed, privacy, and zero cost to users no sign-up required, no limits, forever free.",
+      status: "Completed",
+      technologies: ["NextJs/ReactJS", "Node.js/Express", "TypeScript", "Firebase"],
+      image: "/ekmark-image.png",
+      liveUrl: "https://ekmark.ekolix.com.ng",
+      githubUrl: "https://github.com/bernard-ekoli/ekmark-frontend.git",
+    },
   ]
 
   return (
