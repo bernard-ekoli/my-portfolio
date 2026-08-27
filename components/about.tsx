@@ -16,15 +16,20 @@ export function About() {
           {/* Left column - text */}
           <div className="space-y-6">
             <p className="text-lg leading-relaxed text-foreground">
-              I'm Bernard Edet Ekoli, a full-stack developer from Abuja, Nigeria.
-              I've been coding since I was 14, and this year I got serious.
-              I recently built and deployed TheNigeriaProperties.com, a full stack
-              property listing platform for Nigerian real estate, and I'm currently
-              building a watermark SaaS API for developers.
+              I'm Bernard Edet Ekoli, a self-taught Full Stack MERN Developer
+              based in Abuja, Nigeria coding since I was 14, now building
+              production systems with React, Next.js, TypeScript, Node.js,
+              and MongoDB. I've shipped projects like TheNigerianProperties.com,
+              a full-stack real estate listings platform with agent dashboards
+              and OAuth authentication, and Ekmark, a SaaS watermarking tool
+              with a custom image-processing pipeline but that's the range,
+              not the ceiling. I like picking up whatever a project actually
+              needs, from auth systems to backend pipelines to polished UI.
             </p>
             <p className="text-lg leading-relaxed text-foreground">
-              I write clean code, communicate clearly, and ship on time.
-              Currently open to remote opportunities and freelance projects.
+              I'm currently expanding into AI engineering, and I write clean
+              code, communicate clearly, and ship on time. Open to remote
+              opportunities and freelance projects.
             </p>
           </div>
 

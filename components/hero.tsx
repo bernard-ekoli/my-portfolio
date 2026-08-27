@@ -31,13 +31,11 @@ export function Hero() {
             </h1>
 
             <p className="font-serif text-xl md:text-2xl text-primary font-semibold">
-              Full-Stack Software Engineer
+              Full-Stack Software Engineer/AI Engineer
             </p>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              I build technology that solves real-world problems in real time —
-              transforming ideas into scalable products, from pixel-perfect
-              interfaces to reliable backend systems.
+              I build with the MERN stack and I'm expanding into AI engineering shipping full-stack products with React, Next.js, Node.js, and integrating LLM-powered features and RAG pipelines into real systems.
             </p>
           </div>
 
@@ -52,6 +50,11 @@ export function Hero() {
               onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
             >
               Get In Touch
+            </Button>
+            <Button variant="outline" size="lg" asChild>
+              <a href="/Bernard_Ekoli_CV.pdf" download>
+                Download CV
+              </a>
             </Button>
           </div>
 
