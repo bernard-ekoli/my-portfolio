@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: "Developed by Bernard",
   generator: "Bernard",
   icons: {
-    icon: "/developer-image.jpeg", // path inside /public
+    icon: "/developer-image.png", // path inside /public
   },
 }
 
