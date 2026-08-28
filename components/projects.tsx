@@ -31,7 +31,7 @@ export function Projects() {
         "A fintech platform giving freelancers easy access to Naira and Dollar accounts, built on top of licensed banking rails (Fincra, Wema Bank, Flutterwave). Non-custodial payment orchestration layer with a backend ledger, virtual account issuance, and webhook-driven balance updates no funds held directly, just a fast, simple interface over compliant infrastructure.",
       status: "In Development",
       technologies: ["NextJs/ReactJS", "Node.js/Express", "TypeScript", "PostgreSQL"],
-      image: "/ekolispay-image.png",
+      image: "/ekolispay.png",
       liveUrl: "https://ep.ekolix.com.ng",
       githubUrl: "https://github.com/bernard-ekoli/ekolispay-frontend",
     },
