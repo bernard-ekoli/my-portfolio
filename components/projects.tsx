@@ -8,7 +8,7 @@ export function Projects() {
     {
       title: "TheNigerianProperties",
       description:
-        "A comprehensive real estate platform connecting buyers, sellers, and renters across Nigeria. Features include property listings, virtual tours, and advanced search filters.",
+        "A full-stack real estate platform for property listings, search, filtering, and agent enquiries. Includes an admin panel for managing listings and an agent dashboard for handling incoming enquiries.",
       status: "Completed",
       technologies: ["NextJs/ReactJS", "Node.js", "MongoDB", "Flutterwave API", "JWT", "Paystack API"],
       image: "/theNigeriapropertiesimage.png",
@@ -18,7 +18,7 @@ export function Projects() {
     {
       title: "Ekmark",
       description:
-        "A full-stack SaaS product built with Next.js, Node.js/Express, TypeScript, and Firebase. Features bulk image watermarking, a public REST API, and a pre-launch waitlist system. Designed for speed, privacy, and zero cost to users no sign-up required, no limits, forever free.",
+        "A full-stack SaaS application for batch image watermarking. Users can process up to 10 images at once without creating an account, and the platform also exposes the watermarking functionality through a public REST API.",
       status: "Completed",
       technologies: ["NextJs/ReactJS", "Node.js/Express", "TypeScript", "Firebase"],
       image: "/ekmark-image.png",
@@ -28,11 +28,11 @@ export function Projects() {
     {
       title: "EkolisPay",
       description:
-        "A fintech platform giving freelancers easy access to Naira and Dollar accounts, built on top of licensed banking rails (Fincra, Wema Bank, Flutterwave). Non-custodial payment orchestration layer with a backend ledger, virtual account issuance, and webhook-driven balance updates no funds held directly, just a fast, simple interface over compliant infrastructure.",
+        "A fintech platform I'm currently developing for managing multi-currency balances and payment flows. I'm building the backend ledger, virtual account integrations, webhook handling, and application interface around licensed financial infrastructure.",
       status: "In Development",
       technologies: ["NextJs/ReactJS", "Node.js/Express", "TypeScript", "PostgreSQL"],
       image: "/ekolispay.png",
-      liveUrl: "https://ep.ekolix.com.ng",
+      liveUrl: "#",
       githubUrl: "https://github.com/bernard-ekoli/ekolispay-frontend",
     },
   ]
@@ -43,7 +43,7 @@ export function Projects() {
         <div className="text-center mb-16">
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">Featured Projects</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A showcase of my recent work, from fintech solutions to neural labs innovations
+            A selection of products and client work I've built and shipped.
           </p>
         </div>
 

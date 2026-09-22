@@ -12,77 +12,16 @@ export function About() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-start">
-          {/* Left column - text */}
-          <div className="space-y-6">
-            <p className="text-lg leading-relaxed text-foreground">
-              I'm Bernard Edet Ekoli, a self-taught Full Stack MERN Developer
-              based in Abuja, Nigeria coding since I was 14, now building
-              production systems with React, Next.js, TypeScript, Node.js,
-              and MongoDB. I've shipped projects like TheNigerianProperties.com,
-              a full-stack real estate listings platform with agent dashboards
-              and OAuth authentication, and Ekmark, a SaaS watermarking tool
-              with a custom image-processing pipeline but that's the range,
-              not the ceiling. I like picking up whatever a project actually
-              needs, from auth systems to backend pipelines to polished UI.
-            </p>
-            <p className="text-lg leading-relaxed text-foreground">
-              I'm currently expanding into AI engineering, and I write clean
-              code, communicate clearly, and ship on time. Open to remote
-              opportunities and freelance projects.
-            </p>
-          </div>
-
-          {/* Right column - cards */}
-          <div className="grid gap-6">
-            <Card>
-              <CardContent className="p-6">
-                <div className="flex items-center space-x-4">
-                  <div className="p-3 bg-primary/10 rounded-lg">
-                    <Code className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-serif font-semibold text-lg">Clean Code</h3>
-                    <p className="text-muted-foreground">
-                      Writing maintainable, scalable code that stands the test of time
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardContent className="p-6">
-                <div className="flex items-center space-x-4">
-                  <div className="p-3 bg-primary/10 rounded-lg">
-                    <Rocket className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-serif font-semibold text-lg">Innovation</h3>
-                    <p className="text-muted-foreground">
-                      Turning complex requirements into intuitive, user-friendly products
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardContent className="p-6">
-                <div className="flex items-center space-x-4">
-                  <div className="p-3 bg-primary/10 rounded-lg">
-                    <Users className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-serif font-semibold text-lg">Real Impact</h3>
-                    <p className="text-muted-foreground">
-                      Building technology that works for real people in real time
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
+        <div className="max-w-3xl mx-auto text-center space-y-6 px-4">
+          <p className="text-lg leading-relaxed text-foreground">
+            I'm Bernard Edet Ekoli, a self-taught full-stack software engineer based in Abuja, Nigeria. I've been building software since I was 14 and have spent the last 4+ years turning ideas and real requirements into production applications.
+          </p>
+          <p className="text-lg leading-relaxed text-foreground">
+            I work across the stack, from building responsive interfaces with React and Next.js to designing APIs, handling databases and business logic, and getting applications deployed and running in production. I enjoy taking ownership of a feature or product from the initial idea through implementation and deployment.
+          </p>
+          <p className="text-lg leading-relaxed text-foreground">
+            I'm currently expanding into AI application engineering and learning how to build useful AI features with LLM APIs, LangChain, RAG, and related tooling. I'm open to remote full-time, contract, and freelance opportunities.
+          </p>
         </div>
       </div>
     </section>

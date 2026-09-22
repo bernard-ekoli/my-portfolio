@@ -63,7 +63,7 @@ export function Contact() {
         <div className="text-center mb-16">
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">Get In Touch</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Ready to bring your ideas to life? Let's discuss your next project
+            Let's build something useful.
           </p>
         </div>
 
@@ -73,9 +73,7 @@ export function Contact() {
             <div>
               <h3 className="font-serif text-2xl font-semibold text-foreground mb-6">Let's Connect</h3>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                Whether it's creating responsive, high-impact web applications, optimizing user flows, or turning
-                complex requirements into intuitive products, I bring both technical skill and business thinking to the
-                table.
+                I'm open to remote full-time, contract, and freelance opportunities. If you're building a product, improving an existing application, or need a developer to take ownership of a feature from idea to production, let's talk.
               </p>
             </div>
 
@@ -96,7 +94,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="font-medium text-foreground">Phone</h4>
-                  <p className="text-muted-foreground">+234 (916) 251-4151</p>
+                  <p className="text-muted-foreground">+2347032571478</p>
                 </div>
               </div>
 
@@ -106,7 +104,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="font-medium text-foreground">Location</h4>
-                  <p className="text-muted-foreground">Available for remote work worldwide</p>
+                  <p className="text-muted-foreground">Currently in Nigeria and available for remote work worldwide</p>
                 </div>
               </div>
             </div>
@@ -124,7 +122,7 @@ export function Contact() {
                     <label htmlFor="name" className="text-sm font-medium text-foreground">
                       Name
                     </label>
-                    <Input id="name" name="name" value={formData.name} onChange={handleChange} required placeholder="John/Your Company's Name" />
+                    <Input id="name" name="name" value={formData.name} onChange={handleChange} required placeholder="Bernard/Your Company's Name" />
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="email" className="text-sm font-medium text-foreground">

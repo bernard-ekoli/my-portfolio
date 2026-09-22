@@ -31,11 +31,11 @@ export function Hero() {
             </h1>
 
             <p className="font-serif text-xl md:text-2xl text-primary font-semibold">
-              Full-Stack Software Engineer/AI Engineer
+              Full-Stack Software Engineer
             </p>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              I build with the MERN stack and I'm expanding into AI engineering shipping full-stack products with React, Next.js, Node.js, and integrating LLM-powered features and RAG pipelines into real systems.
+              I build and ship production web applications with React, Next.js, TypeScript, Node.js, and modern databases. I'm currently expanding into AI application engineering, building LLM-powered features and RAG systems.
             </p>
           </div>
 
